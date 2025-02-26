@@ -5,12 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SHOP</title>
-    <style>
-        table{
-            border: 1px solid black;
-            cell-padding: 10px;
-        }
-    </style>
 </head>
 <body>
     <form action="#" method="post">
