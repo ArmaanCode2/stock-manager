@@ -36,15 +36,10 @@ $consumable = $_POST['option'];
 
 
 
-$servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dataBase = "stk_mng";
+require "components/server_con.php";
     $conn = mysqli_connect($servername,$username,$password,$dataBase);
     if(!$conn){
         die("Sorry We failed to connect" . mysqli_connect_error());
-    }else{
-        echo 'success';
     }
     $sql = "INSERT INTO `customer` (`name`, `quantity`, `customer`,`consumable`, `date`) VALUES ('$name', '$quantity', '$customer', '$consumable', current_timestamp())";
     $result = mysqli_query($conn,$sql);

@@ -30,10 +30,8 @@ $name = $_POST['search_by'];
 $value = $_POST['sValue'];
 
 
-$servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dataBase = "stk_mng";
+require "components/server_con.php";
+
     $conn = mysqli_connect($servername,$username,$password,$dataBase);
     if(!$conn){
         die("Sorry We failed to connect" . mysqli_connect_error());
