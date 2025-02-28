@@ -7,6 +7,9 @@
     <title>SHOP</title>
 </head>
 <body>
+    <?php
+        include "./navbar.php";
+    ?>
     <form action="#" method="post">
         <div style="display:block;">
             <select name="search_by">
@@ -43,9 +46,10 @@ $servername = "localhost";
         $result = mysqli_query($conn,$sql);
 
         if($result){
+            echo "<h2>Stock Records</h2>";
             if ($result->num_rows > 0) {
                 while ($row = $result->fetch_assoc()) {
-                    echo "<h2>Stock Records</h2>
+                    echo "
                         <table border='1' cellpadding='10'>
                             <tr>
                                 <th>S.No</th>

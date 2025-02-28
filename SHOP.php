@@ -7,6 +7,9 @@
     <title>SHOP</title>
 </head>
 <body>
+    <?php
+        include "./navbar.php";
+    ?>
     <form action="#" method="post">
         <div style="display:block;">
         <input type="name" name="name" placeholder="Enter product name">
@@ -46,7 +49,9 @@ $servername = "localhost";
     $sql = "INSERT INTO `stock` (`name`, `quantity`, `customer`,`consumable`, `date`) VALUES ('$name', '$quantity', '$customer', '$consumable', current_timestamp())";
     $result = mysqli_query($conn,$sql);
     if($result){
-        echo '<br>Success';
+        echo "<script>
+                alert("Entry Recorded");
+            </script>"
      }else {
         echo '<br>error' . mysqli_connect_error();
     }
