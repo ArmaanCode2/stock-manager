@@ -8,7 +8,7 @@
 </head>
 <body>
     <?php
-        include "./navbar.php";
+        include "components/navbar.php";
     ?>
     <form action="#" method="post">
         <div style="display:block;">
@@ -50,8 +50,8 @@ $servername = "localhost";
     $result = mysqli_query($conn,$sql);
     if($result){
         echo "<script>
-                alert("Entry Recorded");
-            </script>"
+                alert('Entry Recorded');
+            </script>";
      }else {
         echo '<br>error' . mysqli_connect_error();
     }

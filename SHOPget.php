@@ -8,7 +8,7 @@
 </head>
 <body>
     <?php
-        include "./navbar.php";
+        include "components/navbar.php";
     ?>
     <form action="#" method="post">
         <div style="display:block;">

@@ -7,7 +7,7 @@
 </head>
 <body>
     <?php 
-        include "./navbar.php";
+        include "components/navbar.php";
     ?>
 </body>
 </html>
