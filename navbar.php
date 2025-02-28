@@ -14,10 +14,10 @@
             Actions
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="SHOP.php">Insert Record</a></li>
-            <li><a class="dropdown-item" href="SHOPget.php">Search record</a></li>
+            <li><a class="dropdown-item" href="SHOP.php">Insert user record</a></li>
+            <li><a class="dropdown-item" href="SHOPget.php">Search user record</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="inventory.php">Inventory</a></li>
           </ul>
         </li>
       </ul>

@@ -42,7 +42,7 @@ $servername = "localhost";
         $name = $conn->real_escape_string($name);
         $value = $conn->real_escape_string($value);
 
-        $sql = "SELECT * FROM `stock` WHERE `$name` LIKE '%$value%'";
+        $sql = "SELECT * FROM `customer` WHERE `$name` LIKE '%$value%'";
         $result = mysqli_query($conn,$sql);
 
         if($result){

@@ -46,7 +46,7 @@ $servername = "localhost";
     }else{
         echo 'success';
     }
-    $sql = "INSERT INTO `stock` (`name`, `quantity`, `customer`,`consumable`, `date`) VALUES ('$name', '$quantity', '$customer', '$consumable', current_timestamp())";
+    $sql = "INSERT INTO `customer` (`name`, `quantity`, `customer`,`consumable`, `date`) VALUES ('$name', '$quantity', '$customer', '$consumable', current_timestamp())";
     $result = mysqli_query($conn,$sql);
     if($result){
         echo "<script>
